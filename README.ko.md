@@ -142,15 +142,20 @@ npm install n2-qln
 <details>
 <summary><strong>Cursor</strong></summary>
 
-**Settings → MCP Servers → Add Server**:
+`~/.cursor/mcp.json` (전역) 또는 `.cursor/mcp.json` (프로젝트)에 추가:
 
 ```json
 {
-  "name": "n2-qln",
-  "command": "npx",
-  "args": ["-y", "n2-qln"]
+  "mcpServers": {
+    "n2-qln": {
+      "command": "npx",
+      "args": ["-y", "n2-qln"]
+    }
+  }
 }
 ```
+
+또는 **Customize → MCPs**에서 동일한 설정을 추가하세요.
 </details>
 
 <details>
