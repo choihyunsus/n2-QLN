@@ -142,15 +142,20 @@ Edit `claude_desktop_config.json`:
 <details>
 <summary><strong>Cursor</strong></summary>
 
-Open **Settings → MCP Servers → Add Server**:
+Add to `~/.cursor/mcp.json` (global) or `.cursor/mcp.json` (project):
 
 ```json
 {
-  "name": "n2-qln",
-  "command": "npx",
-  "args": ["-y", "n2-qln"]
+  "mcpServers": {
+    "n2-qln": {
+      "command": "npx",
+      "args": ["-y", "n2-qln"]
+    }
+  }
 }
 ```
+
+Or open **Customize → MCPs** and add the same config there.
 </details>
 
 <details>
